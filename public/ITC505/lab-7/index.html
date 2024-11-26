@@ -94,6 +94,27 @@
       font-weight: bold;
     }
 
+    /* Addendum Styles */
+    .addendum {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+      font-size: 1rem;
+    }
+
+    .addendum h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .addendum p {
+      color: #333;
+      line-height: 1.6;
+    }
+
     /* Background Animation */
     @keyframes backgroundShift {
       0% {
@@ -145,6 +166,14 @@
       <p>Last updated: <span id="lastModified"></span></p>
     </footer>
   </div>
+
+  <!-- Addendum Section -->
+  <div class="addendum">
+    <h2>Addendum: Design and Styling Notes</h2>
+    <p>The styling for this Mad Lib Generator was chosen to provide a fun and dynamic experience. The gradient background shifts every 15 seconds to keep the page visually engaging. The input fields and buttons are designed to be user-friendly, with hover and focus effects that provide feedback during interaction. The slide-in animation on the container creates a smooth entrance for the page content. The color scheme was selected to be bright and approachable while maintaining good contrast for readability.</p>
+    <p>For a better user experience, the form is responsive and adjusts for mobile devices, ensuring that users can easily interact with the generator on any screen size.</p>
+  </div>
+
   <script>
     document.getElementById('lastModified').textContent = document.lastModified;
   </script>
