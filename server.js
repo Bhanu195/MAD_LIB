@@ -12,15 +12,12 @@ server.use(logger('dev')); // Use Morgan for logging
 const publicServedFilesPath = path.join(__dirname, 'public');
 server.use(express.static(publicServedFilesPath));
 
-
 // Route to generate a random number
 server.get('/do_a_random', (req, res) => {
   res.send(`Your number is: ${Math.floor(Math.random() * 100) + 1}`);
 });
 
-
-
-// POST Route for Mad Lib
+// POST Route for Mad Lib form
 server.post('/ITC505/lab-7/index.html', (req, res) => {
   const { noun, pluralNoun, adjective, verb, location } = req.body;
 
